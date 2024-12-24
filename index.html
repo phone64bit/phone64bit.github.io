@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>phone64bit's terminal</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="tools">
+                phone64bit@ubuntu: ~
+            </div>
+            <div class="output" id="output">
+
+            </div>
+            <div class="exec">
+                <span class="user">
+                    <span style="color: #8AE234;">phone64bit@ubuntu</span>
+                    <span style="color: #ffffff;">:</span>
+                    <span style="color: #729FCF;">~</span>
+                    <span style="color: #ffffff;">$</span>
+                </span>
+                <input type="text" class="userInput" id="userInput" onblur="this.focus();" autocomplete="off" placeholder="Type 'help' to view available commands.">
+            </div>
+        </div>
+        <script src="e.js"></script>
+    </body>
+</html>
