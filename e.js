@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const echo = async(out, color) => {
         const display = document.createElement("p");
         display.innerHTML = out;
-        display.setAttribute("style", `font-family: "Ubuntu", serif;font-weight: 500;color:${color};font-size:12px;margin-left:4px;line-break:anywhere;`);
+        display.setAttribute("style", `font-family: "Ubuntu", serif;font-weight: 500;color:${color};font-size:12px;margin-left:4px;word-break:break-word;`);
         output.appendChild(display);
         termbody.scrollTop = termbody.scrollHeight;
     }
