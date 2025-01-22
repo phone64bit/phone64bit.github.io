@@ -1,34 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>phone64bit's terminal</title>
-        <link rel="stylesheet" href="index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <div class="tools">
-                phone64bit@ubuntu: ~
-            </div>
-            <div class="terminal-body">
-                <div class="output" id="output">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Sanu Charutwaraphun - CEDT Student">
+    <title>phone64bit's Info</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+</head>
+<body>
+    <div class="portfolio-container" role="main">
+        <header class="nav-wrapper">
+            <nav class="nav-content" aria-label="Main navigation">
+                <div class="brand-name">
+                    <span class="brand-highlight">Sanu</span>
+                    <span>Charutwaraphun</span>
+                </div>
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                    <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                    <li role="none"><a href="#projects" class="nav-link" role="menuitem">Project</a></li>
+                    <li role="none"><a href="#achievements" class="nav-link" role="menuitem">Achievement</a></li>
+                    <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-divider" role="separator" aria-hidden="true"></div>
+        </header>
 
+        <main>
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-greeting">Hello, It's Me</h1>
+                    <div class="typing-name">
+                        <h2 class="hero-name"><!-- content --></h2>
+                    </div>
+                    <p class="hero-title">And I'm <span class="brand-highlight">CEDT</span> student</p>
+                    
+                    <div class="social-links" role="list">
+                        <a href="https://github.com/phone64bit" target="_blank" class="social-link" role="listitem" aria-label="Visit my profile on Github">
+                            <img src="/src/github_btn.png" alt="" class="social-icon" aria-hidden="true">
+                        </a>
+                        <a href="https://discord.com/users/371998522666516481" target="_blank" class="social-link" role="listitem" aria-label="Visit my profile on Instagram">
+                            <img src="/src/discord_btn.png" alt="" class="social-icon" aria-hidden="true">
+                        </a>
+                        <a href="https://www.facebook.com/phone64bit/" target="_blank" class="social-link" role="listitem" aria-label="Visit my profile on Facebook">
+                            <img src="/src/facebook_btn.png" alt="" class="social-icon" aria-hidden="true">
+                        </a>
+                        <a href="https://www.instagram.com/phone64bit" target="_blank" class="social-link" role="listitem" aria-label="Visit my profile on Discord">
+                            <img src="/src/ig_btn.png" alt="" class="social-icon" aria-hidden="true">
+                        </a>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="https://github.com/phone64bit" target="_blank" class="cta-primary">Visit Github</a>
+                        <a href="#contact" class="cta-secondary">Contact Me</a>
+                    </div>
                 </div>
-                <div class="exec">
-                    <span class="user">
-                        <span style="color: #8AE234;">phone64bit@ubuntu</span>
-                        <span style="color: #ffffff;">:</span>
-                        <span style="color: #729FCF;">~</span>
-                        <span style="color: #ffffff;">$</span>
-                    </span>
-                    <input type="text" class="userInput" id="userInput" autocomplete="off" placeholder="Type 'help' to view available commands." maxlength="16">
+                <img src="/src/profile_cartoon.png" alt="Portrait of Sanu Charutwaraphun" class="hero-image">
+            </section>
+
+            <section id="about" class="about-section">
+                <div class="about-content">
+                    <h2 class="about-title">About Me</h2>
+                    <div class="about-grid">
+                        <img src="/src/profile.png" alt="Sanu Charutwaraphun" class="about-image">
+                        
+                        <div class="about-details">
+                            <dl>
+                                <dt class="detail-label">Fullname:</dt>
+                                <dd>Sanu Charutwaraphun</dd>
+                                
+                                <dt class="detail-label">Nickname:</dt>
+                                <dd>Phone</dd>
+                                
+                                <dt class="detail-label">Date of Birth:</dt>
+                                <dd>18 May 2006</dd>
+                                
+                                <dt class="detail-label">Faculty:</dt>
+                                <dd>Computer Engineering</dd>
+                                
+                                <dt class="detail-label">Department:</dt>
+                                <dd>Computer Engineering & Digital Technology</dd>
+                                
+                                <dt class="detail-label">University:</dt>
+                                <dd><a href="https://www.cp.eng.chula.ac.th/cedt" class="detail-link">Chulalongkorn University</a></dd>
+                                
+                                <dt class="detail-label">Junior High School:</dt>
+                                <dd><a href="https://www.st.ac.th/" class="detail-link">Suratthani School</a></dd>
+                                
+                                <dt class="detail-label">Senior High School:</dt>
+                                <dd><a href="https://www.st.ac.th/" class="detail-link">Suratthani School</a></dd>
+                            </dl>
+                            
+                            <h3 class="skills-title">Skills</h3>
+                            <div class="skills-grid" role="list" aria-label="Technical skills">
+                                <img src="/src/lang/c.png" alt="C" class="skill-icon" role="listitem">
+                                <img src="/src/lang/cpp.png" alt="CPP" class="skill-icon" role="listitem">
+                                <img src="/src/lang/java.png" alt="Java" class="skill-icon" role="listitem">
+                                <img src="/src/lang/js.png" alt="JavaScript" class="skill-icon" role="listitem">
+                                <img src="/src/lang/py.png" alt="Python" class="skill-icon" role="listitem">
+                                <img src="/src/lang/css.png" alt="CSS" class="skill-icon" role="listitem">
+                                <img src="/src/lang/html.png" alt="Html" class="skill-icon" role="listitem">
+                                <img src="/src/lang/nodejs.png" alt="NodeJS" class="skill-icon" role="listitem">
+                                <img src="/src/lang/expressjs.png" alt="ExpressJS" class="skill-icon" role="listitem">
+                                <img src="/src/lang/mongodb.png" alt="MongoDB" class="skill-icon" role="listitem">
+                                <img src="/src/lang/postgresql.png" alt="PostgreSQL" class="skill-icon" role="listitem">
+                                <img src="/src/lang/docker.png" alt="Docker" class="skill-icon" role="listitem">
+                                <img src="/src/lang/heroku.png" alt="Heroku" class="skill-icon" role="listitem">
+                                <img src="/src/lang/photoshop.png" alt="Photoshop" class="skill-icon" role="listitem">
+                                <img src="/src/lang/figma.png" alt="Figma" class="skill-icon" role="listitem">
+                                <img src="/src/lang/postman.png" alt="Postman" class="skill-icon" role="listitem">
+                                <img src="/src/lang/linux.png" alt="Linux" class="skill-icon" role="listitem">
+                                <img src="/src/lang/git.png" alt="Git" class="skill-icon" role="listitem">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <script src="e.js"></script>
-    </body>
+            </section>
+
+            <section id="projects" class="projects-section">
+                <div class="project-card minecraft">
+                    <h3>Minecraft Plugin Project</h3>
+                    <p class="project-date">March 2017</p>
+                    <img src="/src/lang/java.png" alt="Java" class="project-logo" style="background-color: white;">
+                    <img src="/src/minecraft-review.gif" alt="Minecraft plugin review" class="project-screenshot" style="width: 1000px;">
+                    <div class="project-actions">
+                        <a href="https://www.spigotmc.org/resources/goldtp.37810/" target="_blank" class="btn-primary">See more</a>
+                        <a href="https://pastebin.com/FsqcEhGJ" target="_blank" class="btn-secondary">Source code</a>
+                    </div>
+                </div>
+
+                <div class="project-card discord">
+                    <h3>Discord Bot Project</h3>
+                    <p class="project-date">Jul, 2020 – Apr, 2024</p>
+                    <div class="tech-stack">
+                        <img src="/src/lang/nodejs.png" alt="NodeJS" class="tech-icon">
+                        <img src="/src/lang/mongodb.png" alt="MongoDB" class="tech-icon">
+                        <img src="/src/lang/discordjs.png" alt="Discord.js" class="tech-icon">
+                        <img src="/src/lang/js.png" alt="JavaScript" class="tech-icon">
+                        <img src="/src/lang/css.png" alt="CSS" class="tech-icon">
+                        <img src="/src/lang/html.png" alt="HTML" class="tech-icon">
+                        <img src="/src/lang/linux.png" alt="Linux" class="tech-icon">
+                    </div>
+                    <div class="project-gallery">
+                        <img src="/src/jailmeplus_info.png" alt="Discord bot info" class="gallery-image">
+                        <div class="gallery-details">
+                            <img src="/src/jailmeplus_votes.png" alt="Total Votes: 3,215" class="detail-image">
+                            <img src="/src/jailmeplus_server.png" alt="Server count: 17,348" class="detail-image">
+                        </div>
+                    </div>
+                    <img src="/src/jailmeplus_website.png" alt="Discord bot statistics" class="stats-image">
+                    <div class="project-actions">
+                        <a href="https://top.gg/bot/729385820108095519" target="_blank" class="btn-primary">See more</a>
+                        <a href="https://github.com/phone64bit/jail-bot-for-discord" target="_blank" class="btn-secondary">Source code</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="achievements" class="achievements-section">
+                <div class="achievement-grid">
+                    <div class="achievement-card toi">
+                        <h3>TOI19</h3>
+                        <p>The 19th Thailand Olympiad in Informatics</p>
+                        <img src="/src/achv/toi19.png" alt="TOI19" class="achievement-image">
+                        <img src="/src/achv/toi19_cert.png" alt="TOI19 Certificate" class="achievement-image">
+                        <a href="https://toi19.nu.ac.th/detail.html" target="_blank" class="btn-primary">See more</a>
+                    </div>
+
+                    <div class="achievement-card devlab">
+                        <h3>Devlab</h3>
+                        <p>Borntodev</p>
+                        <img src="/src/achv/devlab_cert.png" alt="Devlab Certificate" class="achievement-image">
+                        <a href="https://www.borntodev.com/intro-devlab-3-pro/" target="_blank" class="btn-primary">See more</a>
+                    </div>
+
+                    <div class="achievement-card cedt">
+                        <h3>CEDT</h3>
+                        <p>Academic Excellence Badge</p>
+                        <img src="/src/achv/cedt_intro.png" alt="Excellence Badge of Intro to CEDT" class="achievement-image">
+                        <img src="/src/achv/cedt_comprog.png" alt="Excellence Badge of Computer Programming" class="achievement-image">
+                        <img src="/src/achv/cedt_dataalgo.png" alt="Excellence Badge of Data Structure and Algorithm" class="achievement-image">
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <h2>Contact Me</h2>
+                <div class="contact-grid">
+                    <a href="#" class="contact-card facebook">
+                        <div class="icon-wrapper">
+                            <img src="/src/fblogo.png" alt="Facebook" class="contact-icon">
+                        </div>
+                        <span class="contact-label">โฟน</span>
+                    </a>
+
+                    <a href="#" class="contact-card github">
+                        <div class="icon-wrapper">
+                            <img src="/src/githublogo.png" alt="Github" class="contact-icon">
+                        </div>
+                        <span class="contact-label">phone64bit</span>
+                    </a>
+
+                    <a href="#" class="contact-card instagram">
+                        <div class="icon-wrapper">
+                            <img src="/src/iglogo.png" alt="Instagram" class="contact-icon">
+                        </div>
+                        <span class="contact-label">phone64bit</span>
+                    </a>
+
+                    <a href="#" class="contact-card discord">
+                        <div class="icon-wrapper">
+                            <img src="/src/discordlogo.png" alt="Discord" class="contact-icon">
+                        </div>
+                        <span class="contact-label">phone64bit</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        const typed = new Typed('.hero-name', {
+          strings: ['phone64bit', "Sanu Charutwaraphun", 'phone64bit'],
+          typeSpeed: 100,
+          backDelay: 5000,
+          loop: true,
+        });
+    </script>
+</body>
 </html>
